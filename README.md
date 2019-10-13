@@ -5,4 +5,6 @@ Currently, many IoT devices are very susceptible to cyber-attack due to insuffic
 
 - Investigating and conducting a risk assessment on the main vulnerabilities and threats faced by IoT devices within this scenario. 
 - Recommend security policies that can mitigate these threats, justifying these policies taking into account secondary factors including the cost to implement and any loss to productivity these policies might incur. 
-- Model these policies using Scyther, a formal method based protocol verification tool. The scope of this project will be investigating and modelling the best policies and procedures for IoT devices in the smart grid/energy sector.
+- Model these policies using Scyther, a formal method based protocol verification tool. 
+
+The scope of this project will be investigating and modelling the best policies and procedures for IoT devices in the smart grid/energy sector.
