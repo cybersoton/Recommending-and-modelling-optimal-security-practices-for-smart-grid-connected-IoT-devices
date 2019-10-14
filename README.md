@@ -1,4 +1,5 @@
-# Recommending-and-modelling-optimal-security-practices-for-smart-grid-connected-IoT-devices
+# Recommending and modelling optimal security practices for smart grid connected IoT devices
+
 IoT devices present many exciting applications for both industrial and consumer use. However, increased dependence on these devices opens up new consequences and attack vectors that an adversary can use to attack a target. This is of particular importance in the case of IoT devices connected to smart grid infrastructure as cyber-attacks could be used to disrupt critical national infrastructure. 
 
 Currently, many IoT devices are very susceptible to cyber-attack due to insufficient or poorly implemented security practices. This project aims to produce and model a collection of policies and protocols that are suitable for mitigating the threats that a smart grid connected IoT device may face. I wish to focus on the following goals within this project: 
