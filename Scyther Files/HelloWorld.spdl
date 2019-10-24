@@ -1,0 +1,18 @@
+usertype String;
+const HelloWorld: String;
+
+
+protocol hello(I,R)
+	{
+
+	role I {
+		send_1(I,R, HelloWorld);
+
+	}
+
+	role R {
+
+		recv_1(I,R, HelloWorld);
+
+	   }
+}
