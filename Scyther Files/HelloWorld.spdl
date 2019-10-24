@@ -3,16 +3,32 @@ const HelloWorld: String;
 
 
 protocol hello(I,R)
+
 	{
 
 	role I {
-		send_1(I,R, HelloWorld);
+
+		fresh Icreate : Nonce;
+		var Irecieve : Nonce;
+		
+
+		send_1(I,R, {I,Icreate} HelloWorld);
+
+		claim_i1(I,Secret,Icreate);
 
 	}
 
 	role R {
 
-		recv_1(I,R, HelloWorld);
 
+		fresh Rcreate : Nonce;
+		var Rrecieve : Nonce;
+
+		recv_1(I,R, {I,Rrecieve} HelloWorld);
+
+
+		claim_r1(R,Secret,Rcreate);
+
+	
 	   }
 }
