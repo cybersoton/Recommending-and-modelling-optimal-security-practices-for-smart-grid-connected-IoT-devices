@@ -1,0 +1,34 @@
+usertype String;
+const HelloWorld: String;
+
+
+protocol hello(I,R)
+
+	{
+
+	role I {
+
+		fresh Icreate : Nonce;
+		var Irecieve : Nonce;
+		
+
+		send_1(I,R, {I,Icreate} HelloWorld);
+
+		claim_i1(I,Secret,Icreate);
+
+	}
+
+	role R {
+
+
+		fresh Rcreate : Nonce;
+		var Rrecieve : Nonce;
+
+		recv_1(I,R, {I,Rrecieve} HelloWorld);
+
+
+		claim_r1(R,Secret,Rcreate);
+
+	
+	   }
+}

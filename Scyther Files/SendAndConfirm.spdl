@@ -1,0 +1,37 @@
+
+
+
+protocol smartExchange(Meter,Monitor)
+
+	{
+
+	role Meter {
+
+	fresh M: Nonce;
+	var Confirm;
+
+	send_1(Meter,Monitor,{M}k(k));
+	recv_2(Monitor,Meter,{Confirm}k(k));
+
+	claim_Meter1(Meter, Secret, (k));
+
+
+
+	}
+
+	role Monitor {
+
+	var M;
+	fresh Confirm: Nonce;
+
+	recv_1(Meter,Monitor,{M}k(k));
+	send_2(Monitor,Meter,{Confirm}k(k));
+
+	claim_Monitor1(Monitor, Secret, (k));
+
+
+
+	
+	   }
+
+}
